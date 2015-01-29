@@ -1,7 +1,7 @@
 function printTree(obj, opts) {
     var options = opts || {},
-        depth = options.depth || 0, // 0 - no limits
-        short = options.short,
+        depth = options.depth || 0, // depth = 0 - no limits
+        short = options.short,  // short = 1 - print only property names
         qtyIndent = options.indent || 2,
         indentSymbol = Array(qtyIndent + 1).join(' '),
         chars = {
